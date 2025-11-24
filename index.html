@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<!-- Heart Screen -->
+<div id="password-screen">
+    <div class="heart">❤️</div>
+    <input id="password-box" type="password" placeholder="Enter password..." />
+    <p>(hint your birhtday! only the numbers)</p>
+    <button id="password-btn">Enter</button>
+</div>
+
+
+<!-- Main Content Box -->
+<div id="main-box">
+<div class="tabs">
+<button class="tab active" data-target="letter">Letter</button>
+<button class="tab" data-target="pictures">Pictures Gallery</button>
+<button class="tab" data-target="music">Music</button>
+</div>
+
+
+<div class="tab-content active" id="letter">
+  <h1>Happy Birthday, Lovely!❤️</h1>
+<p>Heyy My Loveeee,
+  <br>
+   Since you've opened this you should already know what day is today right??? :>>
+   <br>
+   Happy Brithdayy to youuuuuuuuuuuuu!!!!!!!!! Love!!!!!!!!!!!
+   <br>
+  Wishing you a day full of love, laughter, and joy. 💖<br>
+        I hope you will have a wonderful day.❤️<br>
+        I also wanted to let you know that you are my heart, my world, and my everything!<br><br>
+        Thank you for always being there for me even when i'm down and even when i feel like
+        i'm the reason why all the bad thing happen you. I hope that our story doesn't end
+        and we will travel the world together so that we could experience everything together!
+        Right, love? I love you lots and lots!!❤️Mwahhh!!❤️<br><br>
+        [These are my selfish wishes for you and for us]<br>
+        I wish for your happiness.<br>
+        I wish for your wellness.<br>
+        I wish that you will never be alone.<br>
+        And I wish that we would never ever be apart. :) ❤️ (oki love?)
+        <br>
+        Last but not least, I wish for your happness to be ever lasting!!!
+        <br>
+        And also! It's been a happy 3 months being together with you!(i know it was 3 days ago but... heee...)
+</p>
+</div>
+
+<!-- Pictures tab -->
+<div class="tab-content" id="pictures">
+  <div class="pic-grid">
+    <img src="images/birthday1.jpg" alt="preview1">
+    <img src="images/birthday2.jpg" alt="preview2">
+    <img src="images/birthday3.jpg" alt="preview3">
+    <img src="images/birthday4.jpg" alt="preview4">
+    <img src="images/birthday5.jpg" alt="preview5">
+    <img src="images/birthday6.jpg" alt="preview6">
+    <img src="images/birthday7.jpg" alt="preview7">
+    <img src="images/birthday8.jpg" alt="preview8">
+    <img src="images/birthday9.jpg" alt="preview9">
+    <img src="images/birthday10.jpg" alt="preview10">
+    <img src="images/birthday11.jpg" alt="preview11">
+    <img src="images/birthday12.jpg" alt="preview12">
+    <img src="images/birthday13.jpg" alt="preview13">
+    <img src="images/birthday14.jpg" alt="preview14">
+    <img src="images/birthday15.jpg" alt="preview15">
+  </div>
+</div>
+
+<!-- Fullscreen overlay (ONLY ONE, OUTSIDE ALL TABS) -->
+<div id="img-fullscreen"><img /></div>
+
+
+<div class="tab-content" id="music">
+
+<div class="music-tab">
+        <!-- Left side: Album image -->
+        <img src="images/Best Friend - Jason Chen.png" alt="Album Art" class="music-image">
+
+        <!-- Right side: Content -->
+        <div class="music-content">
+            <span class="music-info">Best Friend - Jason Chen</span>
+            <div class="buttons">
+                <button onclick="skipBackward('audio1')">« 10s</button>
+                <button onclick="playPause('audio1')">◁ II ▷</button>
+                <button onclick="skipForward('audio1')">10s »</button>
+            </div>
+            <div class="progress-container" onclick="setProgress(event, 'audio1')">
+                <div class="progress-bar" id="progress1"></div>
+            </div>
+        </div>
+
+        <audio id="audio1" src="music/Best Friend - Jason Chen.mp3"></audio>
+</div>
+
+<div class="music-tab">
+        <!-- Left side: Album image -->
+        <img src="images/I like you so much you'll know it - Ysabelle Cuevas .png" alt="Album Art" class="music-image">
+
+        <!-- Right side: Content -->
+        <div class="music-content">
+            <span class="music-info">I like you so much you'll know it - Ysabelle Cuevas</span>
+            <div class="buttons">
+                <button onclick="skipBackward('audio2')">« 10s</button>
+                <button onclick="playPause('audio2')">◁ II ▷</button>
+                <button onclick="skipForward('audio2')">10s »</button>
+            </div>
+            <div class="progress-container" onclick="setProgress(event, 'audio2')">
+                <div class="progress-bar" id="progress2"></div>
+            </div>
+        </div>
+
+        <audio id="audio2" src="music/I Like You So Much, You'll Know It - Ysabelle Cuevas (Lyrics).mp3"></audio>
+</div>
+
+<div class="music-tab">
+        <!-- Left side: Album image -->
+        <img src="images/好きだから  - Sukidakara (feat. Ren).png" alt="Album Art" class="music-image">
+
+        <!-- Right side: Content -->
+        <div class="music-content">
+            <span class="music-info">好きだから  - Sukidakara (feat. Ren)</span>
+            <div class="buttons">
+                <button onclick="skipBackward('audio3')">« 10s</button>
+                <button onclick="playPause('audio3')">◁ II ▷</button>
+                <button onclick="skipForward('audio3')">10s »</button>
+            </div>
+            <div class="progress-container" onclick="setProgress(event, 'audio3')">
+                <div class="progress-bar" id="progress3"></div>
+            </div>
+        </div>
+
+        <audio id="audio3" src="music/好きだから  - Sukidakara (feat. Ren).m4a"></audio>
+</div>
+
+<div class="music-tab">
+        <!-- Left side: Album image -->
+        <img src="images/One call away - Charlie Puth.png" alt="Album Art" class="music-image">
+
+        <!-- Right side: Content -->
+        <div class="music-content">
+            <span class="music-info">One call away - Charlie Puth</span>
+            <div class="buttons">
+                <button onclick="skipBackward('audio4')">« 10s</button>
+                <button onclick="playPause('audio4')">◁ II ▷</button>
+                <button onclick="skipForward('audio4')">10s »</button>
+            </div>
+            <div class="progress-container" onclick="setProgress(event, 'audio4')">
+                <div class="progress-bar" id="progress4"></div>
+            </div>
+        </div>
+
+        <audio id="audio4" src="music/One Call Away.m4a"></audio>
+</div>
+
+<div class="music-tab">
+        <!-- Left side: Album image -->
+        <img src="images/True Love - P!nk.png" alt="Album Art" class="music-image">
+
+        <!-- Right side: Content -->
+        <div class="music-content">
+            <span class="music-info">True Love - P!nk</span>
+            <div class="buttons">
+                <button onclick="skipBackward('audio5')">« 10s</button>
+                <button onclick="playPause('audio5')">◁ II ▷</button>
+                <button onclick="skipForward('audio5')">10s »</button>
+            </div>
+            <div class="progress-container" onclick="setProgress(event, 'audio5')">
+                <div class="progress-bar" id="progress5"></div>
+            </div>
+        </div>
+
+        <audio id="audio5" src="music/True Love (feat. Lily Allen).m4a"></audio>
+</div>
+
+<div class="music-tab">
+        <!-- Left side: Album image -->
+        <img src="images/Marvin Gaye - Charlie Puth.png" alt="Album Art" class="music-image">
+
+        <!-- Right side: Content -->
+        <div class="music-content">
+            <span class="music-info">Marvin Gaye - Charlie Puth</span>
+            <div class="buttons">
+                <button onclick="skipBackward('audio6')">« 10s</button>
+                <button onclick="playPause('audio6')">◁ II ▷</button>
+                <button onclick="skipForward('audio6')">10s »</button>
+            </div>
+            <div class="progress-container" onclick="setProgress(event, 'audio6')">
+                <div class="progress-bar" id="progress6"></div>
+            </div>
+        </div>
+
+        <audio id="audio6" src="music/Marvin Gaye (feat. Meghan Trainor).m4a"></audio>
+</div>
+
+</div>
+
+
+<!-- Fullscreen Image -->
+<div id="img-fullscreen"><img /></div>
+<script src="script.js"></script>
+</body>
+</html>
